@@ -51,3 +51,14 @@ Acknowledgement to the producer side when whole message is received.
 Any way around treeMap at the consumer side.
 Adding kafka (.hasNext( ) - > kafka Queue/ Producers)
 
+-----------------------------------------------------------------------------------------------
+Zookeeper StartUP
+~/kafka_2.13-3.4.0/bin/zookeeper-server-start.sh ~/kafka_2.13-3.4.0/config/zookeeper.properties
+
+Kafka StartUP
+~/kafka_2.13-3.4.0/bin/kafka-server-start.sh ~/kafka_2.13-3.4.0/config/server.properties
+
+Consuming from a topic
+kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test
+
+
